@@ -3,27 +3,32 @@
   padding: 0;
 }
 
-$hell: lightblue;
+// Farben wurden angepasst
+$braun: rgb(165, 42, 42);
+$dunkler : rgb($braun,0.5);
+$leichtbraun: #fde1b0;
+
+/* $leichtbraun: lightblue;
 $dunkel: rgba(0, 0, 139, 0.362);
-$dunkler: darkblue;
+$dunkler: darkblue; */
 
 body {
-  background-color: rgba(173, 216, 230, 0.631);
+  background-color: rgb($braun,0.2);
   .form {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: $hell;
+    background: $leichtbraun;
     height: 550px;
     width: 600px;
     border-radius: 25px;
-    border: 3px solid $dunkel;
+    border: 3px solid $braun;
     h1 {
       text-align: center;
       font-size: 2.5rem;
       margin: 5px 0;
-      color: $dunkler;
+      color: $braun;
     }
     .input {
       span {
@@ -40,7 +45,7 @@ body {
           height: 35px;
           font-size: 1.3rem;
           padding: 0 0 0 20px;
-          border: 2px solid $dunkel;
+          border: 2px solid $braun;
           border-radius: 25px;
           color: $dunkler;
           outline: none;
@@ -67,12 +72,12 @@ body {
           justify-content: center;
           margin: 5px auto;
           height: 40px;
-          border: 2px solid $dunkel;
+          border: 2px solid $braun;
           border-radius: 25px;
           cursor: pointer;
           font-size: 1.4rem;
-          background-color: $dunkel;
-          color: $dunkler;
+          background-color: $braun;
+          color: $leichtbraun;
           font-weight: bolder;
           &.mit:hover {
             color: green;
@@ -88,7 +93,7 @@ body {
           font-size: 1.25rem;
           text-align: center;
           a {
-            color: $dunkel;
+            color: $braun;
             &:hover {
               color: $dunkler;
             }
